@@ -144,7 +144,6 @@ words.each do |word|
   end
 end
 
-=end
 fruit=['apple', 'oranges', "raspberries"]
 
 fruit.each{|x| puts "#{x}"}
@@ -157,6 +156,26 @@ colors={
 
 colors.each{|x,y| puts "#{y}: #{x}"}
 
+
+print "Enter a value: "
+first_num=gets.chomp.to_i
+print "enter another value: "
+second_num=gets.chomp.to_i
+
+puts first_num.to_s + " + " + second_num.to_s + " = " + (second_num + first_num).to_s
+
+
+
+write_handler=File.new("myFile.out", "w")
+
+write_handler.puts("my text").to_s
+
+write_handler.close
+
+data_from_file=File.read("myFile.out")
+puts "Data from File: " + data_from_file
+
+=end
 
 
 
