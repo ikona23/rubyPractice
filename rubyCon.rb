@@ -195,3 +195,6 @@ state = gets.chomp
 state.upcase!
 
 puts "Your name is #{first_name} #{last_name} and you're from #{city}, #{state}!"
+
+
+/happy new time/
