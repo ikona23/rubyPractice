@@ -177,7 +177,7 @@ puts "Data from File: " + data_from_file
 
 =end
 
-
+=begin
 print "What's your first name?"
 first_name = gets.chomp
 first_name.capitalize!
@@ -198,3 +198,107 @@ puts "Your name is #{first_name} #{last_name} and you're from #{city}, #{state}!
 
 
 /happy new time/
+
+
+def factorial(n)
+  if n<1
+    raise "argument must be >0"
+  elsif n == 1
+    1
+  else
+    n * factorial(n-1)
+  end
+end
+
+puts factorial(5)
+
+def fibonacci(n)
+  if n<0
+    raise "fuck off"
+  elsif n ==1
+    1
+  else
+    n * factorial(n-1)
+    end
+end
+
+
+#bubblesort
+
+def bubble_Sort arr
+  num = arr.length
+
+  loop do
+    sorted = false
+
+    (num-1).times do |i|
+      if arr[i] > arr[i+1]
+        arr[i], arr[i+1] = arr[i+1], arr[i]
+        sorted = true
+      end
+    end
+    break if sorted = false
+  end
+arr
+end
+
+x=[12,3,4,6,4,2,44,77,8,5,4,3,2,8,0]
+
+p bubble_Sort x
+
+this_family = "peter nani kubo"
+
+puts this_family.split
+
+date = "11/3/2015"
+
+puts date[0..2].split("/")
+
+puts date
+
+soda_type = ["coke", "fanta", "pepsi", "orange soda"]
+
+def bubble_Sort arr
+  num = arr.size
+p num
+  loop do
+    sorted = false
+
+    (num-1).times do |i|
+      if arr[i] > arr[i+1]
+        arr[i], arr[i+1] = arr[i+1], arr[i]
+        sorted = true
+      end
+    end
+    break if not sorted
+  end
+  arr
+end
+
+
+p bubble_Sort soda_type
+
+harsh_brown = {
+    "topping_1" => "Cheese",
+    "topping_2" => "kapusta",
+    "topping_3" => "majo"
+}
+
+p harsh_brown["topping_2"]
+
+family = Hash.new
+
+family["first_name"] = "Peter"
+family["nick_name"] = "Ikona"
+family["last_name"] = "Pet"
+
+
+p family["first_name"]
+
+=end
+memories = Hash.new
+puts "whati s your name"
+memories["first_name"] = gets.chomp
+
+
+p memories
